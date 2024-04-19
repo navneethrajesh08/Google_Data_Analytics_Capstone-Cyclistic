@@ -58,7 +58,7 @@ A description of all data sources used.
 - How does it help you answer your question?
 - Are there any problems with the data?
 
-Attributes of the data and will I need it:
+Attributes of the data and transformations done:
 
 1. Ride\_id: No nulls found.
 2. Rideable\_type: No nulls found.
