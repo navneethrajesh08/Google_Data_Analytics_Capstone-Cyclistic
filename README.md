@@ -1,5 +1,5 @@
 # Google_Data_Analytics_Capstone-Cyclistic
-This was done part of the google certification
+This was done as part of the google certification.
 
 #### A Case Study
 
@@ -331,8 +331,7 @@ Supporting visuals and key findings.
   - Data visualization will definitely help me share my findings, as there is just to much information and not enough time to explain the whole thing in text or table.
 
 #### Deliverable: Visualizations and Key Findings:
-##### Presentation Material can be found here:
-[Tableau Story](https://public.tableau.com/views/Case_Study1Cyclistic/CyclisticShare?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
 ##### Supporting visualizations:
 
 ![image](https://user-images.githubusercontent.com/43974678/236042589-78f50eec-09e8-44ea-bf6c-8710614f7e1c.png)
@@ -367,29 +366,28 @@ Both member types differ in how they use the Cyclistic's services:
 
 ## 6.Act:
 
-#### #### Guiding questions:
+#### Guiding questions:
 
 - How should you organize your data to perform analysis on it?
-  - Ill be importing my data into BigQuery and compiling all the datasets into one table. Ill be then using aggregate functions to create summary tables, or filter the table for a column to answer specific questions.
+  - I plan to import my data into BigQuery and consolidate all datasets into a single table. From there, I'll use aggregate functions to generate summary tables or apply filters to the table's columns to address specific inquiries.
 - Has your data been properly formatted?
-  - Yes, I went through each table and made sure that the data type is of the proper formats and that the table dimensions for all the tables are the same.
+  - I've reviewed each table to ensure that the data types are correctly formatted and that the table dimensions  are the same for all tables.
 - What surprises did you discover in the data?
-  - That casual customers may have longer ride lengths, maybe up to a month. We may want to track such behaviours in real time to maybe persuade them to switch over to annual memberships.
+  - Casual customers might exhibit longer ride durations, possibly extending up to a month. It could be beneficial to monitor such behaviors in real-time to potentially encourage them to transition to annual memberships.
 - What trends or relationships did you find in the data?
-  - Members are more consistent with their usage during day hours and during the week. They are also more likely to use the service during colder months, where casual members sharply drop off in usage.
+  - Members are more consistent with their usage during day hours and during the week. They are also more likely to use the service during colder months, where casual members sharply decrease.
 - How will these insights help answer your business questions?
-  - These insights highlight how both member types use the service differently. Hence it does allow me to answer the business question.Deliverable:
+  - These insights highlight how both member-types use the service differently. Hence it does allow me to answer the business question.
 
+Deliverable:
 Your top three recommendations based on your analysis.
 
 #### Guiding questions:
 
 - What is your final conclusion based on your analysis?
-  - Both member types do use the service differently. Based on start time during a given day, members have successfully integrated using the service in their everyday life, like traveling to and from work, school, etc. Casuals seem to mainly use the service for leisure or will take very long trips.
+  - Both the member-types use the service in a significantly different way. Based on start time, during a given day, members have successfully integrated using the service in their everyday life, like traveling to and from work, school, etc. Casuals riders seem to mainly use the service for leisure activities or plan to take very long trips.
 - How could your team and business apply your insights?
-  - They could look at the differences and craft advertisement, pricing changes, pricing tiers to suit the different needs of the casuals.
-- What next steps would you or your stakeholders take based on your findings?
-  - They should keep the findings in mind as they go about answering the other business questions.
+  - They could look at these differences and craft advertisement, pricing changes, pricing tiers to suit the different needs of the casual rides.
 - Is there additional data you could use to expand on your findings?
   - I could use the starting and ending stations. I did not use it here because of its incomplete nature. But it would have given me locations based usage data between both member groups.
 
@@ -397,10 +395,10 @@ Your top three recommendations based on your analysis.
 
 **Top Three Recommendations:**
 
-- Advertise to Casuals the benefit of using Cyclistic long term as a mode of transport for everyday activities and not as a leisure activity.
-- Keep a track of Casuals who are renewing trips for multiple days and advertise to them the cost-savings of having an annual plan for longer trips.
-- Begin ad campaign that explains the benefits of cold cycling:
-  - Deals with holiday weight gain.
-  - Counteracts Seasonal Affective Disorder.
-  - Spending less time indoors, means less time being in contact with others, means less time getting sick.
-  - Saves gas, money, and the environment.
+- Promote/advertise to casual users the advantages of integrating Cyclistic as a long-term transportation solution for daily activities rather than solely for leisure purposes.
+- Monitor casual users who consistently renew trips for multiple days and market to them, the cost-saving benefits of switching to an annual plan for extended trips.
+- Maybe start an advertisment campaign that explains the benefits of cold cycling:
+  - Combatting holiday weight gain.
+  - Fun activity to do with family and friends.
+  - Sell the 'experience' and create a narrative comparing it to skiing and other winter activities. 
+  - Contributing to savings on gas, expenses, and environmental impact.
