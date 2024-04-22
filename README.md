@@ -20,11 +20,11 @@ A clear statement of the business task.
 #### Guiding Question:
 
 - What is the problem you are trying to solve?
-  - I am trying to figure out how casual riders differ from annual riders to maximize the number of annual riders. I will need to identify the trends and patterns between the two.
+  - I am trying to find, how casual riders differ from annual riders. My objective is to maximize the number of annual riders. I will need to identify, trends and patterns between the two rider types.
 
 
 - How can your insights drive business decisions?
-  - By learning how annual members and casual riders use Cyclistic bikes differently, Cyclistic can then developer marketing strategies around the habits of casual riders and demonstrate how they can benefit from an annual pass like annual members.
+  - By learning how annual members and casual riders use Cyclistic bikes differently, Cyclistic can then developer marketing strategies around the habits of casual riders and demonstrate different ways in which casula riders can benefit from an annual pass.
 
 ### Deliverable: Business Task:
 
@@ -78,7 +78,7 @@ Attributes of the data and transformations done:
 
 - Start\_lat and start\_lng may be discarded as it will not be meaningful.
 
-- I can use Rideable\_type to compare against member types.
+- I can use Rideable\_type to compare and contrast the different member types.
 
 - I can use Started\_at and Ended\_at to find out travel time.
 
@@ -114,13 +114,13 @@ Documentation of any cleaning or manipulation of data.
 #### Guiding Questions:
 
 - What tools are you choosing and why?
-  - For cleaning I'll be using Excel. It's a lot more flexible in terms of calculations
+  - For cleaning I'll be using Excel. Excel is  easy to use and offers more flexible in performing calculations.
 - Have you ensured your data's integrity?
   - Data replication: I've had no issues with data replication. The number of rows of all csv files have been the same.
   - Data Transfer: I was having issues with exporting files to bigquery due to the data type of a column being set to FLOAT instead of TIME. I re-did my data cleaning procedures and was able to export successfully.
   - Data Manipulation: Had to clean data while calculating ride\_length. Turns out, some of the started\_at and ended\_at times were switched, i.e. trips had end times before their start times. This would give an invalid result during calculations. Most of my cleaning efforts were aimed at fixing this.
 - How can you verify that your data is clean and ready to analyze?
-  - Exported all files to big query and combined them into one table. I selected the columns that I will be using for analysis plus the newly created ones and created a new table for it. I have checked the
+  - I exported all files to big query and combined them into one table. I selected the columns that I will be using for analysis plus the newly created ones and created a new table for my analysis.
 
 ### Deliverables:
 
@@ -208,15 +208,15 @@ A summary of the analysis
 #### Guiding questions:
 
 - How should you organize your data to perform analysis on it?
-  - Ill be importing my data into BigQuery and compiling all the datasets into one table. Ill be then using aggregate functions to create summary tables, or filter the table for a column to answer specific questions.
+  - I'll be importing my data into BigQuery and compiling all the datasets into one table. Ill be then using aggregate functions to create summary tables, or filter the table for a column to answer specific questions.
 - Has your data been properly formatted?
   - Yes, I went through each table and made sure that the data type is of the proper formats and that the table dimensions for all the tables are the same.
 - What surprises did you discover in the data?
   - That casual customers may have longer ride lengths, maybe up to a month. We may want to track such behaviours in real time to maybe persuade them to switch over to annual memberships.
 - What trends or relationships did you find in the data?
-  - Members are more consistent with their usage during day hours and during the week. They are also more likely to use the service during colder months, where casual members sharply drop off in usage.
+  - Annual members are more consistent with their usage during day hours and during the week. They are also more likely to use the service during colder months, where casual members usage shows a sharp decline.
 - How will these insights help answer your business questions?
-  - These insights highlight how both member types use the service differently. Hence it does allow me to answer the business question.
+  - These insights highlight how both member types use the service differently. Hence it helps me create insights for the business question.
 
 ### Deliverable: Analysis:
 
@@ -258,9 +258,9 @@ Finally, I created the summary table showing number of rides and average ride le
 | **23 Q1** | casual | 25.28 | 126909 | 23.8 | 533270 |
 | **23 Q1** | member | 12.32 | 406361 | 76.2 | 533270 |
 
-This table gives us more insights into how both member types use the service. By looking at the avg\_ride\_length\_mins column, during Q2 and Q3, we find that casual member on average have a ride length of more than half of the ride length of annual members. This figure drops to just about half more than annual members.
+This table gives us more insights into how both member types use the service. By looking at the avg\_ride\_length\_mins column, during Q2 and Q3, we find that casual member on average have a ride length of more than half of the ride length of annual members. This figure decreases to approximately half of that for annual members.
 
-When it comes to frequency of rides taken, members are our more common riders throughout the year with them consistently representing more than half of the share of rides. Casuals make up around 46% of the number or rides in Q2 and Q3 (Spring and Summer), with their usage lowering during Q4 and 2023 Q1 (Fall and Winter).
+When it comes to frequency of rides taken, members are our more frequent riders throughout the year with them consistently representing more than half of the share of rides. Casuals make up around 46% of the number or rides in Q2 and Q3 (Spring and Summer), with their usage lowering during Q4 and 2023 Q1 (Fall and Winter).
 
 We see this trend even with the total number of rides, Usage peaks at summer and bottoms out during the winter.
 
@@ -283,7 +283,7 @@ And then, I selected the year\_quarterly, month, member\_type and start\_time fi
 ![image](https://user-images.githubusercontent.com/43974678/236042174-d8cf1ca3-9226-4105-b4c6-01710316cd60.png)
 
 ![image](https://user-images.githubusercontent.com/43974678/236042293-bf761c9e-09b9-4378-9e68-9dfec3d9bb6b.png)
-In all four seasons, members use more of the service throughout the day. Casuals usage rises steadily throughout the day to peak at around five in the evening.
+In all four seasons, annual members use more of the service throughout the day. Casuals usage rises steadily throughout the day to peak at around five in the evening.
 
 I then looked at bike type usage between members for the year. This is the query used on. 
 ![image](https://user-images.githubusercontent.com/43974678/236042334-523c41ed-49bf-4769-a2e5-d6189b1bd1b6.png)
@@ -323,12 +323,10 @@ Supporting visuals and key findings.
 
 - Were you able to answer the question of how annual members and casual riders use Cyclistic bikes differently?
   - Yes, I was able to answer how members and casuals use the service differently, based on seasonal, time, ride length and day of the week.
-- What story does your data tell?
-  -
 - Who is your audience? What is the best way to communicate with them?
-  - The key audience here is the executive team, as they will be deciding on whether the marketing strategy moves ahead.
+  - The key audience here is the executive team, as they will be choosing the right marketing strategy.
 - Can data visualization help you share your findings?
-  - Data visualization will definitely help me share my findings, as there is just to much information and not enough time to explain the whole thing in text or table.
+  - Data visualization will definitely help me share my findings, It helps put forward insights in an easy to understand format, and provides clarity for the stakeholders.
 
 #### Deliverable: Visualizations and Key Findings:
 
@@ -354,15 +352,15 @@ Both member types differ in how they use the Cyclistic's services:
 
 2. Overall ridership drops during the colder seasons like fall and winter (Q4 & Q1)
 
-3. Members prefer riding during weekdays. Conversely, Casuals prefer riding during weekends.
+3. Annual members use the cycles mostly during weekdays. Conversely, Casuals prefer riding during weekends.
 
 4. During a given day, both member types peak at around 7pm. But Members ride more often throughout the rest of the day.
 
-5. On average Casuals have longer trips than members.
+5. On average Casuals riders have longer trips than member riders.
 
 6. Also, Casuals have done some of the longest trips that can last several days or weeks.
 
-7. When it comes to ride preference, Casuals can prefer electric cycles in any given quarter. Members are more balanced in their preferences but have not used docked bikes in the last 12 months.
+7. When it comes to ride preference, Casual riders prefer electric cycles in any given quarter. Member riders are more balanced in their preferences but have not used docked bikes in the last 12 months.
 
 ## 6.Act:
 
@@ -375,7 +373,7 @@ Both member types differ in how they use the Cyclistic's services:
 - What surprises did you discover in the data?
   - Casual customers might exhibit longer ride durations, possibly extending up to a month. It could be beneficial to monitor such behaviors in real-time to potentially encourage them to transition to annual memberships.
 - What trends or relationships did you find in the data?
-  - Members are more consistent with their usage during day hours and during the week. They are also more likely to use the service during colder months, where casual members sharply decrease.
+  - Member riders are more consistent with their usage during day hours and during the week. They are also more likely to use the service during colder months, where casual members sharply decrease.
 - How will these insights help answer your business questions?
   - These insights highlight how both member-types use the service differently. Hence it does allow me to answer the business question.
 
